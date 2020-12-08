@@ -11,14 +11,15 @@ $(document).ready(function(){
     //Generate Password
     $('#gen_pwd').click(function (){
         if(test_inputs()){
-            const alphabet = create_alphabet(ck_inputs()).shuffle();
-            const size = parseInt($('#key_len').val())
+            const alphabet = create_alphabet(ck_inputs()).shuffle(); //alphabet are shuffled for more randomness
+            const size = parseInt($('#key_len').val()); //size of the password
             let pwd = create_pass(size, alphabet);
             $('#pwd_out').val(pwd);
         }
     });
 
     //letter choice loop
+    //creates the whole password here
     const create_pass = (size, alphabet) => {
         let pwd = '';
         let rand_sq = rand_gen(alphabet.length);
@@ -40,7 +41,7 @@ $(document).ready(function(){
             yield current;
         }
     }
-
+    //get random number
     const get_rand_num = () => parseInt(crypto.randomBytes(4).toString('hex'),16);
 
     //alphabet creation
@@ -89,6 +90,7 @@ $(document).ready(function(){
     })
 
     //aux methods
+    //get selected character set names
     const ck_inputs = () => $('#box_inputs > div > div > input[type=checkbox]')
                                 .filter(':checked')
                                     .map(function(){return this.id})

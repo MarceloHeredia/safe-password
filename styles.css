@@ -20,13 +20,11 @@ body{
                 -5px -5px 10px #1b3b75;
 }
 
-.min_btn{
-    margin: 10px;
-    color: white;
-    border-radius: 37px;
-    background: #11264b;
-    box-shadow:  5px 5px 10px #071121,
-                -5px -5px 10px #1b3b75;
+.div_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .div_square{
@@ -36,7 +34,7 @@ body{
     border-radius: 13px;
     background: #11264b;
     box-shadow:  11px 11px 10px #071121,
-                -11px -11px 10px #1b3b75;
+    -11px -11px 10px #1b3b75;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -46,20 +44,6 @@ body{
     display: inline-block;
     vertical-align: baseline;
     width: 200px;
-}
-
-
-input{
-    color: white;
-    border-radius: 37px;
-    background: #11264b;
-    box-shadow: inset 5px 5px 10px #071121,
-                inset -5px -5px 10px #1b3b75;
-}
-
-.tip{
-    margin-top: 15px;
-    font-size: 10px;
 }
 
 .error{
@@ -77,17 +61,28 @@ input{
     border-radius: 13px;
     background: linear-gradient(145deg, #122950, #0f2244);
     box-shadow:  10px 10px 20px #0a172e,
-                -10px -10px 20px #183568;
+    -10px -10px 20px #183568;
 }
+
 .hide{
     display:none;
 }
 
-.div_out{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+input{
+    color: white;
+    border-radius: 37px;
+    background: #11264b;
+    box-shadow: inset 5px 5px 10px #071121,
+    inset -5px -5px 10px #1b3b75;
+}
+
+.min_btn{
+    margin: 10px;
+    color: white;
+    border-radius: 37px;
+    background: #11264b;
+    box-shadow:  5px 5px 10px #071121,
+                -5px -5px 10px #1b3b75;
 }
 
 .output{
@@ -95,4 +90,9 @@ input{
     height: 150px;
     width: 600px;
     resize: none;
+}
+
+.tip{
+    margin-top: 15px;
+    font-size: 10px;
 }

@@ -20,6 +20,15 @@ body{
                 -5px -5px 10px #1b3b75;
 }
 
+.min_btn{
+    margin: 10px;
+    color: white;
+    border-radius: 37px;
+    background: #11264b;
+    box-shadow:  5px 5px 10px #071121,
+                -5px -5px 10px #1b3b75;
+}
+
 .div_square{
     margin: 10px;
     padding: 30px;
@@ -48,7 +57,42 @@ input{
                 inset -5px -5px 10px #1b3b75;
 }
 
+.tip{
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.error{
+    position: absolute;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 50%;
+    left: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border-radius: 13px;
+    background: linear-gradient(145deg, #122950, #0f2244);
+    box-shadow:  10px 10px 20px #0a172e,
+                -10px -10px 20px #183568;
+}
+.hide{
+    display:none;
+}
+
+.div_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .output{
     margin: 30px;
-    padding: 15px;
+    height: 150px;
+    width: 600px;
+    resize: none;
 }

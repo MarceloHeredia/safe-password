@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="div_square">
+<div id="box_inputs" class="div_square">
     <div>
         <div class="div_setup">
             <label for="key_len" title="A safe password should have at least 16 characters...">Password Size:</label>
         </div>
         <div class="div_setup">
-            <input id="key_len" type="number" min="6" max="2048" title="A safe password should have at least 16 characters..."/>
+            <input id="key_len" type="number" min="6" max="2048" value="16" title="A safe password should have at least 16 characters..."/>
         </div>
     </div>
     <div>
@@ -30,7 +30,7 @@
             <label for="numbers" title="you know... 12345..">Include Numbers: </label>
         </div>
         <div class="div_setup">
-            <input id="numbers" type="checkbox" title="you know... 12345.."/>
+            <input id="numbers" type="checkbox" Checked title="you know... 12345.."/>
         </div>
     </div>
     <div>
@@ -38,7 +38,7 @@
             <label for="lw_char" title="... abcdz...">Include Lowercase: </label>
         </div>
         <div class="div_setup">
-            <input id="lw_char" type="checkbox"  title="... abcdz..."/>
+            <input id="lw_char" type="checkbox" Checked title="... abcdz..."/>
         </div>
     </div>
     <div>
@@ -46,12 +46,31 @@
             <label for="uppr_char" title="... ABCDZ...">Include Uppercase: </label>
         </div>
         <div class="div_setup">
-            <input id="uppr_char" type="checkbox" title="... ABCDZ..."/>
+            <input id="uppr_char" type="checkbox" Checked title="... ABCDZ..."/>
         </div>
     </div>
+    <div>
+        <p class="tip">Tip: for a safe password, mark at least 3 of the options above</p>
+    </div>
 </div>
-<button class="btn" id="gen_pwd">Generate Password</button>
-<input id="pwd_out" class="output" type="text"/>
+<div id="error" class="error hide">
+    <p id="err_txt">Nothing</p>
+    <button class="min_btn" id="err_ok">Ok</button>
+</div>
+<div>
+    <button class="btn" id="gen_pwd">Generate Password</button>
+</div>
+<div class="div_out">
+    <div>
+        <label for="pwd_out">Output: </label>
+    </div>
+    <div>
+        <textarea id="pwd_out" class="output" type="text"></textarea>
+    </div>
+    <div>
+        <button class="min_btn" id="copy">Copy</button>
+    </div>
+</div>
 </body>
 <footer style="display: none">
     <p>Icon from <a href="https://www.flaticon.com/free-icon/door-key_3824907">Flaticon</a></p>

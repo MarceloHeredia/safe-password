@@ -10,8 +10,10 @@ body{
     flex-direction: column;
 }
 
-.block{
+.btn{
     color: white;
+    margin: 50px;
+    padding:20px;
     border-radius: 37px;
     background: #11264b;
     box-shadow:  5px 5px 10px #071121,
@@ -31,12 +33,22 @@ body{
     flex-direction: column;
 }
 
+.div_setup{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 200px;
+}
+
+
 input{
-    margin: 30px;
-    padding: 15px;
     color: white;
     border-radius: 37px;
     background: #11264b;
-    box-shadow: inset 11px 11px 10px #071121,
-                inset -11px -11px 10px #1b3b75;
+    box-shadow: inset 5px 5px 10px #071121,
+                inset -5px -5px 10px #1b3b75;
+}
+
+.output{
+    margin: 30px;
+    padding: 15px;
 }

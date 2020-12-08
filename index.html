@@ -4,14 +4,56 @@
     <meta charset="UTF-8">
     <title>Password Generator</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <script src="sfpsswd.js"></script>
+    <script src="sfpwd.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="div_square">
-    <p id="result">aaa</p>
+    <div>
+        <div class="div_setup">
+            <label for="key_len" title="A safe password should have at least 16 characters...">Password Size:</label>
+        </div>
+        <div class="div_setup">
+            <input id="key_len" type="number" min="6" max="2048" title="A safe password should have at least 16 characters..."/>
+        </div>
+    </div>
+    <div>
+        <div class="div_setup">
+            <label for="symbols" title="like $#&*¨%@">Include Symbols: </label>
+        </div>
+        <div class="div_setup">
+            <input id="symbols" type="checkbox" title="like $#&*¨%@"/>
+        </div>
+    </div>
+    <div>
+        <div class="div_setup">
+            <label for="numbers" title="you know... 12345..">Include Numbers: </label>
+        </div>
+        <div class="div_setup">
+            <input id="numbers" type="checkbox" title="you know... 12345.."/>
+        </div>
+    </div>
+    <div>
+        <div class="div_setup">
+            <label for="lw_char" title="... abcdz...">Include Lowercase: </label>
+        </div>
+        <div class="div_setup">
+            <input id="lw_char" type="checkbox"  title="... abcdz..."/>
+        </div>
+    </div>
+    <div>
+        <div class="div_setup">
+            <label for="uppr_char" title="... ABCDZ...">Include Uppercase: </label>
+        </div>
+        <div class="div_setup">
+            <input id="uppr_char" type="checkbox" title="... ABCDZ..."/>
+        </div>
+    </div>
 </div>
-<button class="block" id="tst">Click me</button>
-<input type="text"/>
+<button class="btn" id="gen_pwd">Generate Password</button>
+<input id="pwd_out" class="output" type="text"/>
 </body>
+<footer style="display: none">
+    <p>Icon from <a href="https://www.flaticon.com/free-icon/door-key_3824907">Flaticon</a></p>
+</footer>
 </html>

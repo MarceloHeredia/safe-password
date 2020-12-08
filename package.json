@@ -1,0 +1,27 @@
+{
+  "name": "safe-password",
+  "version": "0.1.0",
+  "description": "Safe password generator using electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marceloheredia/safe-password.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marceloheredia/safe-password/issues"
+  },
+  "homepage": "https://github.com/marceloheredia/safe-password#readme",
+  "devDependencies": {
+    "electron": "^11.0.3"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

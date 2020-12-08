@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap%27');
+
+body{
+    font-family: Quicksand, sans-serif;
+    background-color: #11264b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block{
+    color: white;
+    border-radius: 37px;
+    background: #11264b;
+    box-shadow:  5px 5px 10px #071121,
+                -5px -5px 10px #1b3b75;
+}
+
+.div_square{
+    margin: 10px;
+    padding: 30px;
+    color: white;
+    border-radius: 13px;
+    background: #11264b;
+    box-shadow:  11px 11px 10px #071121,
+                -11px -11px 10px #1b3b75;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin: 30px;
+    padding: 15px;
+    color: white;
+    border-radius: 37px;
+    background: #11264b;
+    box-shadow: inset 11px 11px 10px #071121,
+                inset -11px -11px 10px #1b3b75;
+}
